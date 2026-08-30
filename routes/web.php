@@ -3,4 +3,4 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Perkenalan;
 
-Route::get('/perkenalan', [Perkenalan::class, 'index']);
+Route::get('/', [Perkenalan::class, 'index']);
