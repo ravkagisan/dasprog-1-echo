@@ -1,11 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
+use App\Http\Controllers\Perkenalan;
 
-Route::get('/', function () {
-    return Inertia::render('Home', [
-        'user' => 'Ravi',
-        'message' => 'Selamat datang di stack Laravel + Inertia + TypeScript!'
-    ]);
-});
+Route::get('/perkenalan', [Perkenalan::class, 'index']);

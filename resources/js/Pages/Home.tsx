@@ -1,16 +1,19 @@
 import React from 'react';
 
 interface HomeProps {
-    user?: string;
     message?: string;
 }
 
-// WAJIB menggunakan 'export default'
-export default function Home({ user, message }: HomeProps) {
+export default function Home({ message }: HomeProps) {
     return (
-        <div className="p-8">
-            <h1 className="text-2xl font-bold">Halo, {user ?? 'User'}!</h1>
-            <p className="mt-2 text-gray-600">{message}</p>
+        <div className="p-8 max-w-xl mx-auto">
+            <h1 className="text-2xl font-bold mb-4">Profil Mahasiswa</h1>
+            
+            {/* Menampilkan isi dari echo PHP */}
+            <div 
+                className="p-4 bg-gray-100 rounded border leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: message || '' }} 
+            />
         </div>
     );
 }
