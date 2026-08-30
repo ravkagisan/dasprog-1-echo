@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite'; // <-- Tambahkan import ini
+import tailwindcss from '@tailwindcss/vite'; 
 
 export default defineConfig({
     plugins: [
@@ -10,7 +10,7 @@ export default defineConfig({
             refresh: true,
         }),
         react(),
-        tailwindcss(), // <-- Tambahkan plugin di sini
+        tailwindcss(),
     ],
     resolve: {
         alias: {
