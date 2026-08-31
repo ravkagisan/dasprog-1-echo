@@ -11,16 +11,16 @@ class Perkenalan extends Controller
     {
         ob_start();
 
-        echo "Mila Lestary<br>";
-        echo "E41260277<br>";
+        echo "Mochamad Ravi Ainur Rosida<br>";
+        echo "E41261874<br>";
         echo "Teknik Informatika<br>";
-        echo "Karena saya ingin mengembangkan bakat dan minat saya dibidang IT.<br>";
-        echo "Mencoba tapi gagal lebih baik daripada tidak pernah mencoba.<br>";
+        echo "Ingin menjadi programmer handal, namun enggan ngoding<br>";
+        echo "Another day, another W.<br>";
 
         $outputEcho = ob_get_clean();
 
         return Inertia::render('Home', [
-            'message' => $outputEcho
+            'message' => $outputEcho,
         ]);
     }
 }
